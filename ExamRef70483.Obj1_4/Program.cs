@@ -11,9 +11,12 @@ namespace ExamRef70483.Obj1_4
         
         static void Main(string[] args)
         {
-            UnderstangingDelegates understangingDelegates = new UnderstangingDelegates();
+            //UnderstangingDelegates understangingDelegates = new UnderstangingDelegates();
 
-            understangingDelegates.UseDelegate();
+            //understangingDelegates.UseDelegate();
+
+            EjemploMulticastDeDelegates ejemplo = new EjemploMulticastDeDelegates();
+            ejemplo.Multicast();
 
             Console.Read();
         }

@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="EjemploContravariance.cs" />
     <Compile Include="EjemploCovariance.cs" />
+    <Compile Include="EjemploFunc.cs" />
     <Compile Include="EjemploLamdaExpressions.cs" />
     <Compile Include="EjemploMulticastDeDelegates.cs" />
     <Compile Include="Program.cs" />

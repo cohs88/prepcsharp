@@ -10,23 +10,29 @@ namespace ExamRef70483.Obj1_5
     {
         static void Main(string[] args)
         {
-            string s = Console.ReadLine();
+            
             try
             {
-                int i = int.Parse(s);
+                int i = ReadAndParse();
+                Console.WriteLine("Parsed: {0}", i);
             }
-            catch (ArgumentNullException)
+            catch (FormatException e)
             {
-                Console.WriteLine("You need to enter a value");
+                Console.WriteLine("Message : {0}", e.Message);
+                Console.WriteLine("StackTrace : {0}", e.StackTrace);
+                Console.WriteLine("HelpLink : {0}", e.HelpLink);
+                Console.WriteLine("InnerException : {0}", e.InnerException);
+                Console.WriteLine("TargetSite : {0}", e.TargetSite);
+                Console.WriteLine("Source : {0}", e.Source);
             }
-            catch (FormatException)
-            {
-                Console.WriteLine("{0} is not a valid number. Please try again", s);
-            }
-            finally
-            {
-                Console.WriteLine("Program complete.");
-            }
+            Console.Read();
+        }
+
+        private static int ReadAndParse()
+        {
+            string s = Console.ReadLine();
+            int i = int.Parse(s);
+            return i;
         }
     }
 }

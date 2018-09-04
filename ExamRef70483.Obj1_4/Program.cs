@@ -15,8 +15,12 @@ namespace ExamRef70483.Obj1_4
 
             //understangingDelegates.UseDelegate();
 
-            EjemploMulticastDeDelegates ejemplo = new EjemploMulticastDeDelegates();
-            ejemplo.Multicast();
+            //EjemploMulticastDeDelegates ejemplo = new EjemploMulticastDeDelegates();
+            //ejemplo.Multicast();
+
+
+            EjemploCovariance ejemplo = new EjemploCovariance();
+            ejemplo.DoCovariance();
 
             Console.Read();
         }

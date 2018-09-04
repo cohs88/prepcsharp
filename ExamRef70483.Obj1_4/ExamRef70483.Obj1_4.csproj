@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EjemploContravariance.cs" />
     <Compile Include="EjemploCovariance.cs" />
     <Compile Include="EjemploMulticastDeDelegates.cs" />
     <Compile Include="Program.cs" />

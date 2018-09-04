@@ -19,8 +19,11 @@ namespace ExamRef70483.Obj1_4
             //ejemplo.Multicast();
 
 
-            EjemploCovariance ejemplo = new EjemploCovariance();
-            ejemplo.DoCovariance();
+            //EjemploCovariance ejemplo = new EjemploCovariance();
+            //ejemplo.DoCovariance();
+
+            EjemploContravariance ejemplo = new EjemploContravariance();
+            ejemplo.DoContravariance();
 
             Console.Read();
         }

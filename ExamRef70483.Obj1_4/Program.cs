@@ -28,8 +28,11 @@ namespace ExamRef70483.Obj1_4
             //EjemploLamdaExpressions ejemplo = new EjemploLamdaExpressions();
             //ejemplo.DoLamda();
 
-            EjemploFunc ejemplo = new EjemploFunc();
-            ejemplo.DoAction();
+            //EjemploFunc ejemplo = new EjemploFunc();
+            //ejemplo.DoAction();
+
+            PubManager pubManager = new PubManager();
+            pubManager.CreateAndRaise();
 
             Console.Read();
         }

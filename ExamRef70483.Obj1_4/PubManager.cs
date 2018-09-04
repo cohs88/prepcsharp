@@ -11,8 +11,7 @@ namespace ExamRef70483.Obj1_4
         public void CreateAndRaise()
         {
             Pub pub = new Pub();
-            pub.OnChange += () => Console.WriteLine("event raised to method 1");
-            pub.OnChange += () => Console.WriteLine("event raised to method 2");
+            pub.OnChange += (sender, e) => Console.WriteLine("event raised: {0}", e.Value);
             pub.Raise();
         }
     }

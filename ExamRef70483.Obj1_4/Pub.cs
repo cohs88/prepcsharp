@@ -13,11 +13,20 @@ namespace ExamRef70483.Obj1_4
         /// Asi no corre riesgo de que alguien mas elimine los eventos anteriores
         /// otra cosa es que no puede ser ejecutado por usuarios externos si no por quien los define
         /// </summary>
-        public event Action OnChange = delegate { };
+        public event EventHandler<MisArgumentos> OnChange = delegate { };
         public void Raise()
         {
             Console.WriteLine($"Invocation list: {OnChange.GetInvocationList().GetLength(0)}");
-            OnChange();
+            OnChange(this, new MisArgumentos(42));
+        }
+    }
+
+    public class MisArgumentos : EventArgs
+    {
+        public int Value { get; set; }
+        public MisArgumentos(int value)
+        {
+            Value = value;
         }
     }
 }

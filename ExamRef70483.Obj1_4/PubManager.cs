@@ -11,8 +11,19 @@ namespace ExamRef70483.Obj1_4
         public void CreateAndRaise()
         {
             Pub pub = new Pub();
-            pub.OnChange += (sender, e) => Console.WriteLine("event raised: {0}", e.Value);
-            pub.Raise();
+            pub.OnChange += (sender, e) => Console.WriteLine("susbcriber 1 called");
+            pub.OnChange += (sender, e) => { throw new Exception(); };
+            pub.OnChange += (sender, e) => Console.WriteLine("susbcriber 3 called");
+
+
+            try
+            {
+                pub.Raise();
+            }
+            catch (AggregateException ex)
+            {
+                Console.WriteLine($"Exceptions occurred : {ex.InnerExceptions.Count}");
+            }
         }
     }
 }

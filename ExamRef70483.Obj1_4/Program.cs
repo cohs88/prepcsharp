@@ -22,8 +22,11 @@ namespace ExamRef70483.Obj1_4
             //EjemploCovariance ejemplo = new EjemploCovariance();
             //ejemplo.DoCovariance();
 
-            EjemploContravariance ejemplo = new EjemploContravariance();
-            ejemplo.DoContravariance();
+            //EjemploContravariance ejemplo = new EjemploContravariance();
+            //ejemplo.DoContravariance();
+
+            EjemploLamdaExpressions ejemplo = new EjemploLamdaExpressions();
+            ejemplo.DoLamda();
 
             Console.Read();
         }

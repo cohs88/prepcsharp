@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamRef70483.Obj1_3", "Exam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamRef70483.Obj1_4", "ExamRef70483.Obj1_4\ExamRef70483.Obj1_4.csproj", "{22A2AC7F-6196-44A9-B1AA-2B434C55C177}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamRef70483.Obj1_5", "ExamRef70483.Obj1_5\ExamRef70483.Obj1_5.csproj", "{EA76BEDC-C919-40EE-9EEC-49E93B9A71D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{22A2AC7F-6196-44A9-B1AA-2B434C55C177}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22A2AC7F-6196-44A9-B1AA-2B434C55C177}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22A2AC7F-6196-44A9-B1AA-2B434C55C177}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA76BEDC-C919-40EE-9EEC-49E93B9A71D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA76BEDC-C919-40EE-9EEC-49E93B9A71D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA76BEDC-C919-40EE-9EEC-49E93B9A71D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA76BEDC-C919-40EE-9EEC-49E93B9A71D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

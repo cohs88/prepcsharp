@@ -12,7 +12,7 @@ namespace ExamRef70483.Obj2_1
         {
             //ExampleEnumWithFlags();
             //ExampleStruct();
-            ExampleIndexer();
+            //ExampleIndexer();
 
             Console.Read();
         }

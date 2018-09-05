@@ -10,12 +10,41 @@ namespace ExamRef70483.Obj2_1
     {
         static void Main(string[] args)
         {
-            Days readingDays = Days.Monday | Days.Satudary;
+            //ExampleEnumWithFlags();
+            Point point = new Point(1, 10);
 
-            Console.WriteLine($"reading days : {readingDays}");
 
             Console.Read();
         }
+
+        private static void ExampleEnumWithFlags()
+        {
+            Days readingDays = Days.Monday | Days.Satudary;
+
+            Console.WriteLine($"reading days : {readingDays}");
+        }
+    }
+
+    /// <summary>
+    /// An Struct is a Value type and its stored in the Stack
+    /// It cannot be used for inheritance hierarchy
+    /// all value types derives from System.ValueType
+    /// </summary>
+    public struct Point
+    {
+        public int x, y;
+        public Point(int p1, int p2)
+        {
+            x = p1;
+            y = p2;
+        }
+        /// <summary>
+        /// Cannot create empty Constructor for an Struct
+        /// </summary>
+        //public Point()
+        //{
+
+        //}
     }
 
     [Flags]

@@ -23,6 +23,14 @@ namespace ExamRef70483.Obj2_1
         }
     }
 
+    class ClaseDerivada2 : ClaseBase
+    {
+        public sealed override int MyMethod_Overridable()
+        {
+            return base.MyMethod_Overridable();
+        }
+    }
+
     class ClaseDerivada : ClaseBase 
     {
         public override int MyMethod_Overridable()

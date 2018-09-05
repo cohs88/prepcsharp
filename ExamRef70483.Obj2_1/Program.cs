@@ -11,10 +11,25 @@ namespace ExamRef70483.Obj2_1
         static void Main(string[] args)
         {
             //ExampleEnumWithFlags();
-            Point point = new Point(1, 10);
-
+            //ExampleStruct();
+            ExampleIndexer();
 
             Console.Read();
+        }
+
+        private static void ExampleIndexer()
+        {
+            Deck deck = new Deck();
+            deck.Cards.Add(new Card { });
+            deck.Cards.Add(new Card { });
+            deck.Cards.Add(new Card { });
+
+            var t = deck[2];
+        }
+
+        private static void ExampleStruct()
+        {
+            Point point = new Point(1, 10);
         }
 
         private static void ExampleEnumWithFlags()
